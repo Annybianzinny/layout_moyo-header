@@ -3,8 +3,9 @@
 }
 
 * {
-  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,13 +15,16 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0 50px;
 }
 
 .logo {
   display: flex;
+}
+
+.nav {
+  margin-left: auto;
 }
 
 .nav__list {
@@ -40,8 +44,6 @@ body {
 
   color: #000;
   font-size: 12px;
-  font-weight: 500;
-  line-height: 14px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -50,11 +52,11 @@ body {
   color: var(--blue-color);
 }
 
-.nav__link.is-active {
+.is-active {
   color: var(--blue-color);
 }
 
-.nav__link.is-active::after {
+.is-active::after {
   content: '';
   position: absolute;
   bottom: 0;
